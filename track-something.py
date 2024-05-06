@@ -13,7 +13,7 @@ try:
 except:
     pass
 
-st.title("Task Tracker")
+st.title("Task Tracker 2")
 
 task = st.text_input('Enter a task')
 start_button, end_button = st.columns(2)
