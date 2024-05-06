@@ -132,8 +132,7 @@ with tab3:
     log_data["End_time"] = pd.to_datetime(log_data["End_time"])
     log_data["Duration"] = log_data["Duration"]
 
-    # The visualization uses a libraray called altair.
-    # The code below is prefab (should still look into how it works).
+    # The visualization uses a libraray called altair. See documentation.
     timeline_chart = alt.Chart(log_data).mark_bar().encode(
         x=alt.X('Start_time:T', axis=alt.Axis(format="%Y-%m-%d %H:%M")),
         x2='End_time:T',
